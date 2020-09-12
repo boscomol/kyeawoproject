@@ -1,0 +1,541 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+@font-face {
+	font-family: 'Poppins2';
+	src: url(assets/Poppins-Regular.ttf);
+}
+
+#special-link {
+	background-color: rgb(245, 245, 245);
+	color: #B61C1C;
+	border: 1px solid rgb(245, 245, 245);
+}
+
+#special-link:hover {
+	background-color: transparent;
+	color: rgb(245, 245, 245);
+}
+
+
+/*================================================*/
+
+.navbar {
+	z-index: 99999;
+}
+
+.menu{
+	position:relative;
+	z-index:9999;
+}
+
+.my-navbar{
+	width:100%;
+	padding:20px 20px;
+	background-color: #B61C1C;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:999;
+}
+
+.navbar-nav a{
+	font-size:15px;
+	text-transform:uppercase;
+	margin:0px 10px;
+	position:relative;
+	color: rgb(245, 245, 245);
+	font-weight: bold;
+}
+
+.navbar-nav a:hover{
+	background-color: rgb(245, 245, 245);
+	transition: 0.3s;
+	color: #B61C1C;
+}
+
+.navbar-brand a{
+	font-size: 20px;
+	color: rgb(245, 245, 245);
+	transition: 0.3s;
+	font-weight: bold;
+}
+
+.navbar-brand a:hover {
+	color: rgb(216, 216, 216);
+	text-decoration: none;
+}
+
+.navbar-scroll{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color: #B61C1C;
+	padding: 0px 20px;
+	transition:0.5s;
+	animation:scroll 0.6s 1;
+}
+
+@keyframes scroll{
+	0%{transform:translateY(-100%);}
+	100%{transform:translateY(0%);}
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: rgb(7, 0, 7);
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: rgb(17, 17, 17);
+    margin-bottom: 5px;
+}
+
+
+
+/*================================================*/
+
+.jumbotron {
+	margin-top: 95px;
+	height: 600px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img1.jpg');
+	background-size: cover;
+	background-position: bottom center;
+}
+
+.jumbotron #particles-js {
+	margin-top: -330px;
+	opacity: 50%;
+}
+
+.jumbotron .container {
+	margin-top: 150px;
+}
+
+.jumbotron h1 {
+	color: #fff;
+}
+
+.jumbotron p {
+	color: #fff;
+}
+
+
+.jumbotron-room h1 {
+	position: relative;
+	color: #fff;
+	top: 100px;
+}
+
+.jumbotron-account {
+	margin-top: 95px;
+	height: 300px;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/img1.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.jumbotron-account #particles-js {
+	margin-top: -50px;
+}
+
+.jumbotron-account h1 {
+	position: relative;
+	color: #fff;
+	top: 100px;
+}
+
+/*================================================*/
+
+#about {
+	margin-top: -32px;
+	padding: 80px;
+}
+
+
+.about-us h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 20px 0;
+	font-family: 'Poppins2', sans-serif;
+}
+
+.about-us p {
+	font-family: 'Poppins2', sans-serif;
+	text-align: justify;
+	font-size: 16px;
+}
+
+
+/*================================================*/
+
+
+#contact {
+	background-color: rgb(245, 245, 245);
+	padding: 80px;
+}
+
+.contact-us {
+	font-family: 'Poppins2', sans-serif;
+	font-size: 16px;
+}
+
+.contact-us img {
+	width: 100%;
+	height: 300px;
+}
+
+.contact-us h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 20px 0;
+	font-family: 'Poppins2', sans-serif;
+}
+
+.contact-us p {
+	font-family: 'Poppins2', sans-serif;
+	font-size: 16px;
+}
+
+.contact-us h4 {
+	padding: 10px 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.contact-us .kontak {
+	margin: auto;
+}
+
+.contact-us i {
+	font-size: 16px;
+}
+
+.contact-us .kontak a {
+	color: #000;
+}
+
+.contact-us .kontak p {
+	
+}
+
+.social-div {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.social {
+	width: 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+/*================================================*/
+
+
+footer {
+	border-top: 5px solid  #B61C1C;
+}
+
+.nav-footer {
+	min-height: 400px;
+	background-color: rgb(32, 32, 32);
+	padding: 40px;
+	color: #fff;
+}
+
+.nav-footer p {
+	color: rgba(255, 255, 255, 0.774);
+}
+
+.nav-footer a {
+	color: rgba(255, 255, 255, 0.774);
+}
+
+.nav-footer a:hover {
+	color: #fff;
+}
+
+.nav-footer h4 {
+	padding: 10px 0;
+}
+
+
+.copy-footer {
+	height: 100px;
+	padding-top: 4px;
+	background-color: rgb(20, 20, 20);
+}
+
+.copy-footer p {
+	font-size: 15px;
+	color:  #B61C1C;
+	line-height: 40px;
+	text-align: center;
+	font-family: 'Poppins2', sans-serif;
+	font-weight: 300;
+}
+
+.copyright {
+	height: 40px;
+}
+
+.reserved {
+	height: 40px;
+}
+
+/*================================================*/
+
+/*  HALAMAN ACCOUNT  */
+
+.account {
+	margin-top: -32px;
+	padding: 80px;
+}
+
+.account h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 20px 0;
+	font-family: 'Poppins2', sans-serif;
+}
+
+.account p {
+	font-family: 'Poppins2', sans-serif;
+	text-align: justify;
+	font-size: 16px;
+}
+
+.account .buatakun {
+	margin: auto;
+}
+
+.account-artikel {
+	margin-top: 90px;
+	padding: 80px;
+}
+
+.account-artikel h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 20px 0;
+	font-family: 'Poppins2', sans-serif;
+}
+
+.account-artikel p {
+	font-family: 'Poppins2', sans-serif;
+	text-align: justify;
+	font-size: 16px;
+}
+
+
+/*================================================*/
+
+/*  HALAMAN BLOG  */
+
+#posting {
+	margin-top: -32px;
+	padding: 80px;
+}
+
+.posting-us {
+	
+}
+
+.posting-us img {
+	width: 100%;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.posting-us img:hover {
+	opacity: 0.9;
+	transition: 0.5s;
+}
+
+.posting-us h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 20px 0;
+	font-family: 'Poppins2', sans-serif;
+}
+
+.posting-us h3 a {
+	color: rgb(17, 17, 17);
+}
+
+.posting-us p {
+	font-family: 'Poppins2', sans-serif;
+	text-align: justify;
+	font-size: 16px;
+}
+
+.postingan {
+	margin: 50px 0;
+}
+
+/*================================================*/
+
+
+@media screen and (max-width: 992px) {
+
+	.navbar {
+		background-color: transparent;
+	}
+
+	.navbar-nav {
+		margin-top: 50px;
+	}
+
+	.navbar-nav a {
+		margin-left: 0;
+	}
+
+	.navbar-nav a:hover{
+		background-color: unset;
+		color: #fff;
+		margin-left: unset;
+	}
+
+	.navbar-nav #special-link {
+		background-color: transparent;
+		color: rgb(245, 245, 245);
+		border: none;
+	}
+
+	.navbar-nav button {
+		text-align: left;
+		margin-left: 0;
+	}
+
+	.navbar-nav button:hover{
+		background-color: transparent;
+		margin-left: unset;
+	}
+
+
+	.navbar-brand a{
+		font-size: 15px;
+	}
+
+
+	.jumbotron {
+		height: 90vh;
+	}
+
+	.jumbotron .container {
+		margin-top: 120px;
+	}
+
+	.jumbotron .container h1 {
+		font-size: 45px;
+	}
+
+
+	/* Jumbotron Particles */
+
+	.jumbotron #particles-js {
+		height: 100vh;
+	}
+
+	.jumbotron-room #particles-js {
+		height: 300px;
+	}
+
+	.jumbotron-account #particles-js {
+		height: 300px;
+	}
+
+	/* End Jumbotron Particles */
+
+	
+
+
+	#about {
+		padding: 40px 0;
+	}
+
+	.about-us img {
+		height: 200px;
+		margin-bottom: 20px;
+	}
+
+	#offer {
+		padding: 40px 0;
+	}
+
+	.offer-us img {
+		height: 200px;
+		margin-bottom: 20px;
+	}
+
+	#contact {
+		padding: 40px 0;
+	}
+
+	.contact-us .kontak {
+		margin-top: 10px;
+	}
+
+	.copy-footer p {
+		font-size: 12px;
+	}
+
+	.account {
+		padding: 40px 0;
+	}
+
+	.account .masukakun {
+		margin-bottom: 20px;
+	}
+
+	.account .buatakun {
+		margin-top: 20px;
+	}
+
+	.account .card {
+		margin: 20px;
+	}
+
+
+	#posting {
+		padding: 40px 0;
+	}
+
+	.posting-us img {
+		height: 200px;
+	}
+
+
+	.account-artikel {
+		padding: 40px 0;
+	}
+
+	.account-artikel .masukakun {
+		margin-bottom: 20px;
+	}
+
+	.account-artikel .buatakun {
+		margin-top: 20px;
+	}
+
+
+}
+
